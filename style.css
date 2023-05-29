@@ -1,3 +1,45 @@
 body{
-    background-color: cornflowerblue;
+    background-image: url(files/header_kep.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+}
+
+
+.container{
+    display: grid;
+    width: calc(100%);
+    height: calc(100%);
+    grid-template-areas: 
+    "header""header""header"
+    "main""main""main"
+    "footer""footer""footer";
+}
+
+header{
+    grid-area: header;
+    
+}
+
+.logo{
+    display: flex;
+}
+
+.logo>h1{
+    align-self: center;
+}
+
+nav{
+    display: flex;
+    justify-content:center;
+}
+
+
+main{
+    grid-area: main;
+}
+
+footer{
+    display: flex;
+    grid-area: footer;
 }
